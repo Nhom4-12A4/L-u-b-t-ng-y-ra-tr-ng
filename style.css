@@ -40,8 +40,7 @@ nav a{margin-left:1rem;color:#9ad;text-decoration:none}
     text-shadow:0 6px 18px rgba(0,0,0,.6)
 }
 .banner p{font-size:1rem;opacity:.9;max-width:720px;margin:0 auto}
-.banner .handwrite{
-    color:#ffb347;
+.handwrite{color:#ffb347;
 .album-marquee{
     overflow:hidden;
     background:#000;
