@@ -1,8 +1,7 @@
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;overflow-x:hidden}
-body{
-    font-family:system-ui,"Segoe UI",sans-serif;
-    background:linear-gradient(#fff6d6,#ffe9a8);
+body {
+    background: linear-gradient(#fff6d6,#ffe9a8);
     color:#4a3a12;
 }
 header{
@@ -215,12 +214,14 @@ nav a{margin-left:1rem;color:#9ad;text-decoration:none}
     display:block;
     padding:.5rem .8rem;
     margin-bottom:.4rem;
-    background:#11162a;
+    background:#fff4cc;
     border-radius:10px;
     cursor:pointer;
     transition:.25s
 }
-.quiz-item label:hover{background:#151c3a}
+.quiz-item label:hover{
+    background:#ffe49a;
+}
 .result{display:none;font-size:.85rem;margin-top:.5rem}
 .correct:checked~.correct-msg{display:block;color:#7dffb3}
 .quiz-item input:not(.correct):checked~.wrong-msg{display:block;color:#ff9a9a}
