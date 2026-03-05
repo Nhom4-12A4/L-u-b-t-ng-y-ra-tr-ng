@@ -2,8 +2,8 @@
 html,body{margin:0;padding:0;overflow-x:hidden}
 body{
     font-family:system-ui,"Segoe UI",sans-serif;
-    background:radial-gradient(circle at top,#243a7a,#0a1230);
-    color:#eaeaea
+    background:linear-gradient(#fff6d6,#ffe9a8);
+    color:#4a3a12;
 }
 header{
     display:flex;
@@ -144,9 +144,10 @@ nav a{margin-left:1rem;color:#9ad;text-decoration:none}
     box-shadow:inset 0 0 8px rgba(0,0,0,.6)
 }
 .corner-box{
-    background:#11162a;
+    background:#fffdf2;
     padding:2rem;
-    border-radius:18px
+    border-radius:16px;
+    box-shadow:0 8px 18px rgba(0,0,0,.15);
 }
 
 .corner-desc{font-size:.9rem;opacity:.7;margin-bottom:1.2rem}
@@ -159,9 +160,9 @@ nav a{margin-left:1rem;color:#9ad;text-decoration:none}
     display:flex;
     gap:.8rem;
     padding:.8rem 1rem;
-    background:#0b0f19;
-    border-radius:12px;
-    color:#eaeaea;
+    background:#fff7da;
+    color:#4a3a12;
+    border:1px solid #f2d98c;
     text-decoration:none;
     position:relative;
     transition:.3s
@@ -205,8 +206,9 @@ nav a{margin-left:1rem;color:#9ad;text-decoration:none}
 .quiz-game{
     margin-top:1.6rem;
     padding:1.6rem;
-    background:#0b0f19;
-    border-radius:18px
+    background:#fffdf2;
+    border-radius:16px;
+    border:1px solid #f2d98c;
 }
 .quiz-item input{display:none}
 .quiz-item label{
