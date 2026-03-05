@@ -10,7 +10,11 @@ header{
     padding:1rem 2rem;
     background:#11162a
 }
-nav a{margin-left:1rem;color:#9ad;text-decoration:none}
+nav a{
+    margin-left:1rem;
+    color:#7a5a00;
+    text-decoration:none
+}
 
 .handwrite{font-family:"Comic Sans MS",cursive}
 .banner{
@@ -143,10 +147,13 @@ nav a{margin-left:1rem;color:#9ad;text-decoration:none}
     box-shadow:inset 0 0 8px rgba(0,0,0,.6)
 }
 .corner-box{
-    background:#fffdf2;
-    padding:2rem;
-    border-radius:16px;
-    box-shadow:0 8px 18px rgba(0,0,0,.15);
+    background:
+    repeating-linear-gradient(
+        to bottom,
+        #fffdf2,
+        #fffdf2 28px,
+        #f0e2a6 29px
+    );
 }
 
 .corner-desc{font-size:.9rem;opacity:.7;margin-bottom:1.2rem}
@@ -169,7 +176,7 @@ nav a{margin-left:1rem;color:#9ad;text-decoration:none}
 .memory-item strong{color:#9ad}
 .memory-item:hover{
     transform:translateY(-4px);
-    background:#151c3a
+    background:#ffeeb5;
 }
 .memory-item::after{
     content:"";
@@ -237,8 +244,10 @@ nav a{margin-left:1rem;color:#9ad;text-decoration:none}
 .btn-write{
     display:inline-block;
     padding:.9rem 2.2rem;
-    background:#000;
-    color:#fff;
+    
+    background:#ffd86b;
+    color:#4a3a12;
+    
     border-radius:999px;
     text-decoration:none;
     transition:.3s
@@ -294,8 +303,6 @@ footer{text-align:center;padding:2rem 1rem 2.5rem;opacity:.6}
 /* ====== TRANG VIẾT LƯU BÚT ====== */
 
 body {
-    background: radial-gradient(circle at top, #0f1a3a, #050914);
-    color: #e6e9ff;
     font-family: "Segoe UI", sans-serif;
 }
 .btn-home {
