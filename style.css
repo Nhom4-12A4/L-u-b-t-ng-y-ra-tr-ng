@@ -1,14 +1,14 @@
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;overflow-x:hidden}
-body {
-    background: linear-gradient(#fff6d6,#ffe9a8);
+body{
+    background:linear-gradient(#fffbe6,#f5e2a3);
     color:#4a3a12;
 }
 header{
     display:flex;
     justify-content:space-between;
     padding:1rem 2rem;
-    background:#11162a
+    background:#ffe9a8;
 }
 nav a{
     margin-left:1rem;
@@ -16,18 +16,36 @@ nav a{
     text-decoration:none
 }
 
-.handwrite{font-family:"Comic Sans MS",cursive}
+.handwrite{
+    font-family:"Comic Sans MS",cursive;
+    font-size:24px;
+    font-weight:700;
+    
+    color:#7a5a00;
+    background:linear-gradient(#ffe8a3,#ffd86b);
+    
+    padding:6px 14px;
+    border-radius:10px;
+    
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    
+    display:inline-block;
+    margin-bottom:16px;
+}
 .banner{
+    height: 200px;
+    
     position:relative;
     text-align:center;
-    padding:5rem 1.2rem 4rem;
     background:
-        linear-gradient(rgba(11,15,25,.35),rgba(11,15,25,.65)),
+        linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.45)),
         url("banner.jpg") center/cover;
-    border-radius:0 0 32px 32px;
-    box-shadow:0 18px 40px rgba(0,0,0,.45);
-    overflow:hidden
+
+    border-radius:0 0 90px 90px;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+    overflow:hidden;
 }
+
 .banner::after{
     content:"";
     position:absolute;
@@ -35,30 +53,45 @@ nav a{
     background:radial-gradient(circle at top,rgba(255,255,255,.25),transparent 65%)
 }
 .banner h1{
-    font-size:2.2rem;
-    margin-bottom:.6rem;
-    color:#e8edff;
-    text-shadow:0 6px 18px rgba(0,0,0,.6)
+    font-size:2rem;
+    color:#ffffff;
+
+    text-shadow:
+        0 3px 10px rgba(0,0,0,.7),
+        0 0 8px rgba(255,255,255,.4);
+
+    background:linear-gradient(#ffe8a3,#ffd86b);
+    color:#6a4b00;
+
+    padding:6px 16px;
+    border-radius:12px;
+    display:inline-block;
+}.banner p{
+    font-size:0.95rem;
+    color:#fff;
+
+    text-shadow:0 2px 6px rgba(0,0,0,.7);
 }
-.banner p{font-size:1rem;opacity:.9;max-width:720px;margin:0 auto}
-.banner.handwrite{color:#ffb347;}
 .album-marquee{
     overflow:hidden;
-    background:#000;
+    background:#ffe9a8;
     padding:.6rem 0;
-    mask-image:linear-gradient(to right,transparent,black 10%,black 90%,transparent)
 }
+
 .marquee-text{
     white-space:nowrap;
-    animation:albumMove 16s linear infinite;
-    font-size:.9rem;
-    opacity:.85
+    animation:albumMove 18s linear infinite;
+
+    font-size:1rem;
+    font-weight:500;
+
+    color:#7a5a00;
+    letter-spacing:.5px;
 }
 @keyframes albumMove{
     from{transform:translateX(100%)}
-    to{transform:translateX(-100%)}
+    to{transform:translateX(-120%)}
 }
-
 .album{padding:2rem 1.5rem 3rem;text-align:center}
 .album-grid{
     display:grid;
@@ -136,26 +169,30 @@ nav a{
     padding:2.5rem 1.5rem 3rem
 }
 .book-spine{
-    background:repeating-linear-gradient(
-        to bottom,
-        rgba(255,255,255,.15),
-        rgba(255,255,255,.15) 8px,
-        transparent 8px,
-        transparent 16px
+    width:26px;
+    background:linear-gradient(
+        to right,
+        #c7b079,
+        #f5e6b5,
+        #c7b079
     );
-    border-radius:10px;
-    box-shadow:inset 0 0 8px rgba(0,0,0,.6)
+    border-radius:14px;
+    box-shadow:
+        inset 0 0 6px rgba(0,0,0,0.2),
+        0 4px 10px rgba(0,0,0,0.15);
 }
 .corner-box{
     background:
     repeating-linear-gradient(
         to bottom,
-        #fffdf2,
-        #fffdf2 28px,
-        #f0e2a6 29px
+        #fffdf5,
+        #fffdf5 30px,
+        #e7d8a3 31px
     );
+    
+    border-radius:14px;
+    padding:20px;
 }
-
 .corner-desc{font-size:.9rem;opacity:.7;margin-bottom:1.2rem}
 .student-corner{
     display:grid;
@@ -173,7 +210,9 @@ nav a{
     position:relative;
     transition:.3s
 }
-.memory-item strong{color:#9ad}
+.memory-item strong{
+    color:#c88a00;
+}
 .memory-item:hover{
     transform:translateY(-4px);
     background:#ffeeb5;
@@ -322,6 +361,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .form {
     width: 90%;
@@ -331,11 +371,6 @@ body {
     border-radius: 16px;
     padding: 24px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-}
-.handwrite {
-    font-size: 22px;
-    margin-bottom: 16px;
-    text-align: center;
 }
 .write-note {
     max-width: 420px;
