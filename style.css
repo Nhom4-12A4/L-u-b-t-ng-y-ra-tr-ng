@@ -148,7 +148,16 @@ nav a{
     from{transform:scale(.85);opacity:0}
     to{transform:scale(1);opacity:1}
 }
-.photo-detail p{margin-top:1rem;font-size:.9rem;opacity:.85;text-align:center}
+.photo-detail p{
+    margin-top:1rem;
+    font-size:0.9rem;
+    color:#fff;
+    text-align:center;
+
+    background:rgba(0,0,0,.4);
+    padding:6px 12px;
+    border-radius:8px;
+}
 .photo-detail .close{
     position:absolute;
     top:20px;
